@@ -14,24 +14,20 @@
 
 **Software Engineer · Backend & Distributed Systems**
 
-I build production systems where APIs, data, events and infrastructure have to work together — and I keep a parallel habit of building things just because the idea is interesting.
-
-My work spans **backend architecture, cloud systems, web applications, AI tooling and product experiments**.
+I build backend systems, web applications, data pipelines and cloud infrastructure.
 
 </td>
 <td width="42%" valign="top">
 
-### `signal`
+### `focus`
 
 ```text
-backend / distributed   ████████████████
-AI / agents             ██████████████░░
-web / product           █████████████░░░
-cloud / infrastructure  █████████████░░░
-experiments             ███████████████░
+backend / distributed
+AI / agents
+web / product
+cloud / infrastructure
+data / ETL
 ```
-
-<sub>Not a skill ranking. Just where I spend my time.</sub>
 
 </td>
 </tr>
@@ -39,7 +35,7 @@ experiments             ███████████████░
 
 <br>
 
-## `what i actually build`
+## `what i'm building`
 
 <table>
 <tr>
@@ -47,29 +43,31 @@ experiments             ███████████████░
 
 ### `EONOM`
 
-A personal product built as a **separate web + application architecture**.
+An **Airbnb-like platform** I am building.
 
-The UI is a Next.js / React application; the application layer is a NestJS service with Prisma/PostgreSQL, authentication, listings, bookings, wishlists, reviews, messaging, promotions, recommendations, payments, notifications and event-driven modules.
+**Web:** Next.js / React  
+**Application:** NestJS / Prisma / PostgreSQL
 
-**The interesting part:** treating a product as a system, not just a screen.
+Listings, bookings, wishlists, reviews, messaging, promotions, recommendations, payments, notifications and events.
 
 </td>
 <td width="50%" valign="top">
 
 ### `BLESSHMS`
 
-A full hospital-management system split across **frontend + backend repositories**.
+A **hospital management system** split into separate frontend and backend applications.
 
-The frontend is a Next.js / React application covering patients, appointments, prescriptions, billing, inventory, labs, optics, analytics and administration. The backend provides NestJS APIs, PostgreSQL persistence, JWT/RBAC, audit trails, backups, licensing and offline/cloud synchronization.
+**Frontend:** Next.js / React  
+**Backend:** NestJS / PostgreSQL
 
-**The interesting part:** real workflows meeting real infrastructure.
+Patients, appointments, prescriptions, billing, inventory, labs, optics, analytics, administration, RBAC, audit trails, backups and cloud synchronization.
 
 </td>
 </tr>
 </table>
 
 ```text
-                    PRODUCT
+                    PRODUCTS
                        │
           ┌────────────┴────────────┐
           │                         │
@@ -85,11 +83,9 @@ The frontend is a Next.js / React application covering patients, appointments, p
              PostgreSQL                PostgreSQL
 ```
 
-<sub>These are the kinds of systems I enjoy: multiple moving parts, clear boundaries, and enough complexity to make the architecture matter.</sub>
-
 <br>
 
-## `the engineering side`
+## `stack`
 
 <table>
 <tr>
@@ -116,7 +112,7 @@ Event-driven architecture
 **DATA**
 
 PostgreSQL · MongoDB  
-Prisma · TypeORM · DBT  
+Prisma · TypeORM · dbt  
 ETL · APIs · SFTP
 
 </td>
@@ -125,7 +121,7 @@ ETL · APIs · SFTP
 
 <br>
 
-## `production taught me`
+## `production`
 
 ```text
 millions of records
@@ -145,80 +141,15 @@ millions of records
                          design for it
 ```
 
-I've worked on high-throughput event pipelines, third-party integrations, cloud infrastructure, data/ETL systems and backend platforms across production environments. My resume describes 4+ years of experience across fintech, logistics and royalty-accounting domains, including ownership of production systems end-to-end. fileciteturn42file0L5-L8
-
-<br>
-
-## `the pattern`
-
-<table>
-<tr>
-<td align="center" width="33%">
-
-### 01
-**QUESTION**
-
-Start with *why*.
-
-</td>
-<td align="center" width="33%">
-
-### 02
-**BUILD**
-
-Make the idea real.
-
-</td>
-<td align="center" width="33%">
-
-### 03
-**PULL IT APART**
-
-Understand what is actually happening.
-
-</td>
-</tr>
-</table>
-
-```text
-                         ┌───────────────┐
-                         │     IDEA      │
-                         └───────┬───────┘
-                                 │
-                                 ▼
-                    ┌────────────────────────┐
-                    │        PROTOTYPE       │
-                    └────────────┬───────────┘
-                                 │
-                       ┌─────────┴─────────┐
-                       │                   │
-                       ▼                   ▼
-                 ┌───────────┐       ┌───────────┐
-                 │   WORKS   │       │   BREAKS  │
-                 └─────┬─────┘       └─────┬─────┘
-                       │                   │
-                       └─────────┬─────────┘
-                                 ▼
-                         ┌───────────────┐
-                         │ UNDERSTANDING │
-                         └───────┬───────┘
-                                 │
-                                 └──────────→ build again
-```
+4+ years working across fintech, logistics and royalty accounting, building backend platforms, event pipelines, integrations, cloud infrastructure and data systems.
 
 <br>
 
 ## `currently`
 
 **AI agents** · **LLM systems** · **developer tooling**  
-**backend architecture** · **automation** · **web interfaces**  
-**data + APIs** · **distributed systems** · **product experiments**
-
-<br>
-
-> ### **I don't want software that merely looks finished.**
-> 
-> I want to understand the machinery underneath it.
+**backend architecture** · **automation** · **web applications**  
+**data systems** · **distributed systems**
 
 <br>
 
