@@ -6,154 +6,41 @@
 
 <br>
 
-<table>
-<tr>
-<td width="58%" valign="top">
-
 ## `whoami`
 
 **Software Engineer · Backend & Distributed Systems**
 
 I build backend systems, web applications, data pipelines and cloud infrastructure.
 
-</td>
-<td width="42%" valign="top">
-
-### `focus`
-
-```text
-backend / distributed
-AI / agents
-web / product
-cloud / infrastructure
-data / ETL
-```
-
-</td>
-</tr>
-</table>
+<img src="./architecture.svg" alt="System architecture" width="100%" />
 
 <br>
 
 ## `what i'm building`
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### `EONOM`
-
-An **Airbnb-like platform** I am building.
+<img src="./products.svg" alt="EONOM and BLESSHMS" width="100%" />
 
 <a href="https://eonom.com"><img src="./eonom.svg" alt="EONOM" height="32" /></a>
-
-**Web:** Next.js / React  
-**Application:** NestJS / Prisma / PostgreSQL
-
-Listings, bookings, wishlists, reviews, messaging, promotions, recommendations, payments, notifications and events.
-
-[**eonom.com**](https://eonom.com)
-
-</td>
-<td width="50%" valign="top">
-
-### `BLESSHMS`
-
-A **hospital management system** split into separate frontend and backend applications.
-
+&nbsp;&nbsp;&nbsp;
 <a href="https://blesshms.com"><img src="https://www.blesshms.com/logo_animated.svg?t=1788651002872" alt="BlessHMS" height="48" /></a>
 
-**Frontend:** Next.js / React  
-**Backend:** NestJS / PostgreSQL
+**EONOM** is an Airbnb-like platform I am building. Next.js / React on the web, NestJS / Prisma / PostgreSQL in the application layer, with listings, bookings, wishlists, reviews, messaging, promotions, recommendations, payments, notifications and events.
 
-Patients, appointments, prescriptions, billing, inventory, labs, optics, analytics, administration, RBAC, audit trails, backups and cloud synchronization.
+**BLESSHMS** is a hospital management system split into separate frontend and backend applications. Next.js / React on the frontend, NestJS / PostgreSQL on the backend, covering patients, appointments, prescriptions, billing, inventory, labs, optics, analytics, administration, RBAC, audit trails, backups and cloud synchronization.
 
-[**blesshms.com**](https://blesshms.com)
-
-</td>
-</tr>
-</table>
-
-```text
-                    PRODUCTS
-                       │
-          ┌────────────┴────────────┐
-          │                         │
-        EONOM                  BLESSHMS
-          │                         │
-     ┌────┴────┐              ┌─────┴─────┐
-     │         │              │           │
-     UI       API            UI          API
-     │         │              │           │
-   Next.js   NestJS         Next.js     NestJS
-                │                         │
-             Prisma /                  TypeORM /
-             PostgreSQL                PostgreSQL
-```
+[**eonom.com**](https://eonom.com) · [**blesshms.com**](https://blesshms.com)
 
 <br>
 
 ## `stack`
 
-<table>
-<tr>
-<td width="33%" align="center">
-
-**BACKEND**
-
-<img src="https://cdn.simpleicons.org/python" height="24" alt="Python" /> <img src="https://cdn.simpleicons.org/django" height="24" alt="Django" /> <img src="https://cdn.simpleicons.org/nestjs" height="24" alt="NestJS" />
-
-Python · Django · DRF  
-Node.js · NestJS  
-REST · GraphQL
-
-</td>
-<td width="33%" align="center">
-
-**SYSTEMS**
-
-<img src="https://cdn.simpleicons.org/amazonaws" height="24" alt="AWS" /> <img src="https://cdn.simpleicons.org/googlecloud" height="24" alt="GCP" /> <img src="https://cdn.simpleicons.org/terraform" height="24" alt="Terraform" />
-
-AWS · GCP · Terraform  
-SQS · Lambda · BigQuery  
-Event-driven architecture
-
-</td>
-<td width="33%" align="center">
-
-**DATA**
-
-<img src="https://cdn.simpleicons.org/postgresql" height="24" alt="PostgreSQL" /> <img src="https://cdn.simpleicons.org/mongodb" height="24" alt="MongoDB" /> <img src="https://cdn.simpleicons.org/prisma" height="24" alt="Prisma" />
-
-PostgreSQL · MongoDB  
-Prisma · TypeORM · dbt  
-ETL · APIs · SFTP
-
-</td>
-</tr>
-</table>
+<img src="./stack.svg" alt="Technology stack" width="100%" />
 
 <br>
 
 ## `production`
 
-```text
-millions of records
-        │
-        ▼
-   event pipelines ────────→ APIs ────────→ external systems
-        │                     │                    │
-        ▼                     ▼                    ▼
-     queues                auth / RBAC          webhooks
-        │                     │                    │
-        └──────────────→ observability ←──────────┘
-                              │
-                              ▼
-                         failure happens
-                              │
-                              ▼
-                         design for it
-```
+<img src="./production.svg" alt="Production engineering pipeline" width="100%" />
 
 4+ years working across fintech, logistics and royalty accounting, building backend platforms, event pipelines, integrations, cloud infrastructure and data systems.
 
@@ -161,18 +48,12 @@ millions of records
 
 ## `currently`
 
-**AI agents** · **LLM systems** · **developer tooling**  
-**backend architecture** · **automation** · **web applications**  
-**data systems** · **distributed systems**
+<img src="./ai.svg" alt="AI agents and LLM orchestration" width="100%" />
+
+AI agents · LLM systems · developer tooling  
+backend architecture · automation · web applications  
+data systems · distributed systems
 
 <br>
 
-<div align="center">
-
-`BUILD` &nbsp;→&nbsp; `BREAK` &nbsp;→&nbsp; `UNDERSTAND` &nbsp;→&nbsp; `REPEAT`
-
-<br><br>
-
-<sub>still building.</sub>
-
-</div>
+<img src="./footer.svg" alt="Build break understand repeat" width="100%" />
