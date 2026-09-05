@@ -41,34 +41,34 @@ data / ETL
 <tr>
 <td width="50%" valign="top">
 
-<div align="center">
-<img src="./eonom.svg" width="56" alt="EONOM" />
-
 ### `EONOM`
-</div>
 
 An **Airbnb-like platform** I am building.
+
+<a href="https://eonom.com"><img src="./eonom.svg" alt="EONOM" height="32" /></a>
 
 **Web:** Next.js / React  
 **Application:** NestJS / Prisma / PostgreSQL
 
 Listings, bookings, wishlists, reviews, messaging, promotions, recommendations, payments, notifications and events.
 
+[**eonom.com**](https://eonom.com)
+
 </td>
 <td width="50%" valign="top">
 
-<div align="center">
-<img src="./blesshms.svg" width="56" alt="BlessHMS" />
-
 ### `BLESSHMS`
-</div>
 
 A **hospital management system** split into separate frontend and backend applications.
+
+<a href="https://blesshms.com"><img src="./blesshms.svg" alt="BlessHMS" height="32" /></a>
 
 **Frontend:** Next.js / React  
 **Backend:** NestJS / PostgreSQL
 
 Patients, appointments, prescriptions, billing, inventory, labs, optics, analytics, administration, RBAC, audit trails, backups and cloud synchronization.
+
+[**blesshms.com**](https://blesshms.com)
 
 </td>
 </tr>
@@ -95,34 +95,43 @@ Patients, appointments, prescriptions, billing, inventory, labs, optics, analyti
 
 ## `stack`
 
-<div align="center">
+<table>
+<tr>
+<td width="33%" align="center">
 
-<img src="https://cdn.simpleicons.org/python" width="42" alt="Python" />
-<img src="https://cdn.simpleicons.org/django" width="42" alt="Django" />
-<img src="https://cdn.simpleicons.org/nodedotjs" width="42" alt="Node.js" />
-<img src="https://cdn.simpleicons.org/nestjs" width="42" alt="NestJS" />
-<img src="https://cdn.simpleicons.org/react" width="42" alt="React" />
-<img src="https://cdn.simpleicons.org/nextdotjs" width="42" alt="Next.js" />
-<img src="https://cdn.simpleicons.org/postgresql" width="42" alt="PostgreSQL" />
-<img src="https://cdn.simpleicons.org/mongodb" width="42" alt="MongoDB" />
-<img src="https://cdn.simpleicons.org/amazonwebservices" width="42" alt="AWS" />
-<img src="https://cdn.simpleicons.org/googlecloud" width="42" alt="GCP" />
-<img src="https://cdn.simpleicons.org/terraform" width="42" alt="Terraform" />
-<img src="https://cdn.simpleicons.org/graphql" width="42" alt="GraphQL" />
-<img src="https://cdn.simpleicons.org/prisma" width="42" alt="Prisma" />
-<img src="https://cdn.simpleicons.org/typescript" width="42" alt="TypeScript" />
+**BACKEND**
 
-</div>
+<img src="https://cdn.simpleicons.org/python" height="24" alt="Python" /> <img src="https://cdn.simpleicons.org/django" height="24" alt="Django" /> <img src="https://cdn.simpleicons.org/nestjs" height="24" alt="NestJS" />
 
-<br>
+Python · Django · DRF  
+Node.js · NestJS  
+REST · GraphQL
 
-<div align="center">
+</td>
+<td width="33%" align="center">
 
-`Python` · `Django` · `DRF` · `Node.js` · `NestJS` · `React` · `Next.js`  
-`PostgreSQL` · `MongoDB` · `Prisma` · `TypeORM` · `GraphQL` · `AWS` · `GCP` · `Terraform`  
-`SQS` · `Lambda` · `BigQuery` · `dbt` · `ETL` · `SFTP`
+**SYSTEMS**
 
-</div>
+<img src="https://cdn.simpleicons.org/amazonaws" height="24" alt="AWS" /> <img src="https://cdn.simpleicons.org/googlecloud" height="24" alt="GCP" /> <img src="https://cdn.simpleicons.org/terraform" height="24" alt="Terraform" />
+
+AWS · GCP · Terraform  
+SQS · Lambda · BigQuery  
+Event-driven architecture
+
+</td>
+<td width="33%" align="center">
+
+**DATA**
+
+<img src="https://cdn.simpleicons.org/postgresql" height="24" alt="PostgreSQL" /> <img src="https://cdn.simpleicons.org/mongodb" height="24" alt="MongoDB" /> <img src="https://cdn.simpleicons.org/prisma" height="24" alt="Prisma" />
+
+PostgreSQL · MongoDB  
+Prisma · TypeORM · dbt  
+ETL · APIs · SFTP
+
+</td>
+</tr>
+</table>
 
 <br>
 
