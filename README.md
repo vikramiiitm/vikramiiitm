@@ -2,65 +2,95 @@
 
 # VIKRAM
 
-### I build software, break abstractions, and keep asking *why?*
+### I build systems, tools, and experiments at the edge of software + AI.
 
-`engineering` · `AI` · `systems` · `web` · `experiments`
+<br>
+
+`BACKEND` &nbsp;·&nbsp; `AI` &nbsp;·&nbsp; `SYSTEMS` &nbsp;·&nbsp; `WEB` &nbsp;·&nbsp; `EXPERIMENTS`
 
 </div>
 
----
+<br>
 
 ```text
-╭──────────────────────────────────────────────────────────────╮
-│                                                              │
-│   I like turning ideas into things that actually work.       │
-│                                                              │
-│   Not particularly interested in collecting technologies.    │
-│   More interested in understanding them.                     │
-│                                                              │
-╰──────────────────────────────────────────────────────────────╯
+┌──────────────────────────────────────────────────────────────────────┐
+│                                                                      │
+│   curiosity  →  prototype  →  reality  →  failure  →  understanding │
+│                                                                      │
+└──────────────────────────────────────────────────────────────────────┘
 ```
 
-## `currently`
+## ABOUT
 
-Building across **backend systems, AI tooling, developer tools, and web applications**.
+I’m a software engineer who enjoys going deeper than the framework layer.
 
-Lately, a lot of my curiosity is around **AI agents, model orchestration, coding workflows, and the boundary between humans and software that can build software.**
+I like taking an idea from **“this should exist”** to something real — then pulling it apart to understand what is actually happening underneath.
 
-## `stack`
+My public work moves between **backend engineering, developer tooling, AI systems, interfaces, and small experiments that turn into much bigger rabbit holes.**
 
-**Python** · **Django** · **DRF** · **React** · **Node.js**  
-**PostgreSQL** · **MongoDB** · **GraphQL** · **Docker** · **Git**
+## WHAT I’M INTO
 
-And increasingly:
+<table>
+<tr>
+<td width="50%">
 
-**LLMs** · **AI agents** · **automation** · **developer tooling** · **system design**
+**AI × SOFTWARE**
 
-## `how_i_build`
+Agents · LLM workflows · model orchestration · generative interfaces · automation
+
+</td>
+<td width="50%">
+
+**SYSTEMS × ENGINEERING**
+
+APIs · data · architecture · developer tools · performance · distributed thinking
+
+</td>
+</tr>
+<tr>
+<td>
+
+**BUILDING × WEB**
+
+Django · React · Node · PostgreSQL · MongoDB · GraphQL
+
+</td>
+<td>
+
+**CURIOSITY × CODE**
+
+Things that are useful, weird, visual, ambitious — or simply worth understanding.
+
+</td>
+</tr>
+</table>
+
+## CURRENTLY
 
 ```text
-idea
-  │
-  ├── question it
-  │
-  ├── build it
-  │
-  ├── break it
-  │
-  ├── understand why
-  │
-  └── build it better
+┌─ exploring ─────────────────────────────────────────────────────────┐
+│                                                                     │
+│  AI agents            how models + tools become useful systems      │
+│  coding workflows     making software development more composable   │
+│  developer tooling    reducing the friction between idea and code   │
+│  intelligent UI       interfaces that adapt to what you're doing    │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
 ```
 
-I don't want software that merely *looks* finished.
+## MY RULE
 
-I like knowing **what is happening underneath, where it breaks, and why the design should exist in the first place.**
+> **Don't just make it work. Figure out why it works.**
 
----
+That usually leads to better code, stranger experiments, and occasionally a completely different idea than the one I started with.
+
+<br>
 
 <div align="center">
 
-> **Build. Break. Understand. Repeat.**
+**build → break → understand → repeat**
+
+<br><br>
 
 `still building.`
 
