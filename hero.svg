@@ -1,130 +1,210 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#09090b"/>
-      <stop offset="0.55" stop-color="#111827"/>
-      <stop offset="1" stop-color="#09090b"/>
+      <stop offset="0" stop-color="#05070b"/>
+      <stop offset="0.48" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#05070b"/>
     </linearGradient>
-
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+    <radialGradient id="halo" cx="72%" cy="48%" r="48%">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.14"/>
+      <stop offset="0.42" stop-color="#7c3aed" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#22d3ee" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="0.52" stop-color="#a78bfa" stop-opacity="1"/>
+      <stop offset="0.8" stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
     </linearGradient>
-
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="5" result="b"/>
-      <feMerge>
-        <feMergeNode in="b"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="glowCyan" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-
+    <filter id="glowSoft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#94a3b8" opacity="0.22"/>
+    </pattern>
     <style>
-      /* Same CSS animation methodology as the BLESSHMS logo */
       .grid {
-        animation-duration: 14s;
+        animation-duration: 16s;
         animation-iteration-count: infinite;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in-out;
-        animation-name: moveGrid;
+        animation-name: driftGrid;
       }
-
-      .cyan-path {
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in-out;
-        animation-name: pulseCyan;
-      }
-
-      .violet-path {
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in-out;
-        animation-delay: 1s;
-        animation-name: pulseViolet;
-      }
-
-      .flow-line {
-        stroke-dasharray: 18 22;
-        animation-duration: 3s;
+      .signal {
+        stroke-dasharray: 12 28;
+        animation-duration: 3.2s;
         animation-iteration-count: infinite;
         animation-fill-mode: forwards;
         animation-timing-function: linear;
-        animation-name: moveFlow;
+        animation-name: signalFlow;
       }
-
-      .node {
-        animation-duration: 2.8s;
+      .signal2 {
+        stroke-dasharray: 4 34;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        animation-name: signalFlowReverse;
+      }
+      .pulse {
+        animation-duration: 2.6s;
         animation-iteration-count: infinite;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in-out;
-        animation-name: pulseNode;
+        animation-name: breathe;
       }
-
-      .node-right {
-        animation-delay: 0.8s;
+      .pulse2 { animation-delay: 0.65s; }
+      .pulse3 { animation-delay: 1.25s; }
+      .orbit {
+        transform-origin: 890px 210px;
+        animation-duration: 18s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: rotate;
       }
-
-      @keyframes moveGrid {
-        0%, 15% { transform: translate(0, 0); }
-        100% { transform: translate(-20px, 10px); }
+      .orbit2 {
+        transform-origin: 890px 210px;
+        animation-duration: 27s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: reverse;
+        animation-name: rotate;
       }
-
-      @keyframes pulseCyan {
-        0%, 15% { opacity: 0.18; }
-        100% { opacity: 0.5; }
+      .scanner {
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-name: scan;
       }
-
-      @keyframes pulseViolet {
-        0%, 15% { opacity: 0.12; }
-        100% { opacity: 0.38; }
+      .typing {
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(1);
+        animation-name: blink;
       }
-
-      @keyframes moveFlow {
-        0%, 15% { stroke-dashoffset: 0; }
-        100% { stroke-dashoffset: -80; }
+      @keyframes driftGrid {
+        0%, 15% { transform: translate(0, 0); opacity: 0.3; }
+        55% { transform: translate(-18px, 10px); opacity: 0.5; }
+        100% { transform: translate(0, 0); opacity: 0.3; }
       }
-
-      @keyframes pulseNode {
-        0%, 15% { transform: scale(0.8); opacity: 0.65; }
-        100% { transform: scale(1.5); opacity: 1; }
+      @keyframes signalFlow {
+        0% { stroke-dashoffset: 0; opacity: 0.2; }
+        50% { opacity: 0.9; }
+        100% { stroke-dashoffset: -160; opacity: 0.2; }
+      }
+      @keyframes signalFlowReverse {
+        0% { stroke-dashoffset: 0; opacity: 0.12; }
+        50% { opacity: 0.65; }
+        100% { stroke-dashoffset: 160; opacity: 0.12; }
+      }
+      @keyframes breathe {
+        0%, 100% { transform: scale(0.72); opacity: 0.35; }
+        50% { transform: scale(1.55); opacity: 1; }
+      }
+      @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes scan {
+        0%, 100% { transform: translateY(-76px); opacity: 0; }
+        15%, 75% { opacity: 0.8; }
+        50% { transform: translateY(76px); opacity: 0.45; }
+      }
+      @keyframes blink {
+        0%, 46%, 54%, 100% { opacity: 1; }
+        50% { opacity: 0.15; }
       }
     </style>
   </defs>
 
-  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="28" fill="url(#halo)"/>
+  <rect x="24" y="24" width="1152" height="372" rx="20" fill="url(#dots)" opacity="0.45"/>
 
-  <g class="grid" opacity="0.18" stroke="#94a3b8" stroke-width="1">
-    <path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M0 300H1200"/>
-    <path d="M100 0V360M200 0V360M300 0V360M400 0V360M500 0V360M600 0V360M700 0V360M800 0V360M900 0V360M1000 0V360M1100 0V360"/>
+  <g class="grid" fill="none" stroke="#64748b" stroke-width="1" opacity="0.28">
+    <path d="M40 74H1160M40 134H1160M40 194H1160M40 254H1160M40 314H1160M40 374H1160"/>
+    <path d="M100 40V380M180 40V380M260 40V380M340 40V380M420 40V380M500 40V380M580 40V380M660 40V380M740 40V380M820 40V380M900 40V380M980 40V380M1060 40V380"/>
   </g>
 
-  <g fill="none" stroke-linecap="round">
-    <path class="cyan-path" d="M90 265 C270 110 365 320 535 165 S820 70 1110 210" stroke="#22d3ee" stroke-opacity="0.32" stroke-width="2"/>
-    <path class="violet-path" d="M80 300 C250 185 390 260 520 120 S820 160 1120 85" stroke="#a78bfa" stroke-opacity="0.22" stroke-width="2"/>
-    <path class="flow-line" d="M120 285H1080" stroke="url(#line)" stroke-width="2"/>
+  <g opacity="0.8">
+    <path d="M60 344 C210 280 290 365 410 300 S610 240 760 286 S1000 350 1140 250" fill="none" stroke="#22d3ee" stroke-opacity="0.08" stroke-width="28" filter="url(#glowSoft)"/>
+    <path class="signal" d="M60 344 C210 280 290 365 410 300 S610 240 760 286 S1000 350 1140 250" fill="none" stroke="url(#signal)" stroke-width="2.2"/>
+    <path class="signal2" d="M60 356 C230 305 315 355 430 318 S640 270 790 305 S1010 330 1140 274" fill="none" stroke="#a78bfa" stroke-opacity="0.45" stroke-width="1.2"/>
   </g>
 
-  <g filter="url(#glow)">
-    <circle class="node" cx="535" cy="165" r="5" fill="#22d3ee"/>
-    <circle class="node node-right" cx="820" cy="160" r="5" fill="#a78bfa"/>
+  <g>
+    <text x="70" y="82" fill="#64748b" font-family="monospace" font-size="13" letter-spacing="4">VIKRAMIIITM // SYSTEM ONLINE</text>
+    <circle cx="1090" cy="78" r="4" fill="#22d3ee" filter="url(#glowCyan)"/>
+    <text x="1105" y="83" fill="#64748b" font-family="monospace" font-size="11">BUILDING</text>
+
+    <text x="70" y="162" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" letter-spacing="-3">VIKRAM</text>
+    <text x="74" y="194" fill="#94a3b8" font-family="monospace" font-size="15">backend · distributed systems · ai · product</text>
+
+    <g transform="translate(72 238)" font-family="monospace" font-size="12">
+      <rect width="372" height="30" rx="8" fill="#0f172a" stroke="#1e293b"/>
+      <text x="14" y="20" fill="#22d3ee">$</text>
+      <text x="31" y="20" fill="#cbd5e1">build systems that survive reality</text>
+      <text class="typing" x="350" y="20" fill="#a78bfa">_</text>
+    </g>
+
+    <g transform="translate(72 290)" font-family="monospace" font-size="11">
+      <text fill="#22d3ee">01</text><text x="26" fill="#64748b">design</text>
+      <text x="98" fill="#334155">/</text>
+      <text x="120" fill="#a78bfa">02</text><text x="146" fill="#64748b">build</text>
+      <text x="205" fill="#334155">/</text>
+      <text x="227" fill="#22d3ee">03</text><text x="253" fill="#64748b">break</text>
+      <text x="314" fill="#334155">/</text>
+      <text x="336" fill="#a78bfa">04</text><text x="362" fill="#64748b">understand</text>
+    </g>
   </g>
 
-  <text x="72" y="92" fill="#64748b" font-family="monospace" font-size="15" letter-spacing="4">VIKRAMIIITM / PROFILE</text>
-  <text x="72" y="166" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" letter-spacing="-2">VIKRAM</text>
-  <text x="76" y="202" fill="#94a3b8" font-family="monospace" font-size="16">software · systems · ai · experiments</text>
+  <g>
+    <circle cx="890" cy="210" r="104" fill="none" stroke="#334155" stroke-width="1" stroke-dasharray="2 9"/>
+    <circle cx="890" cy="210" r="72" fill="none" stroke="#475569" stroke-opacity="0.55" stroke-width="1"/>
+    <circle cx="890" cy="210" r="38" fill="#22d3ee" opacity="0.08" filter="url(#glowSoft)"/>
+    <circle cx="890" cy="210" r="13" fill="#0b1020" stroke="#22d3ee" stroke-width="2" filter="url(#glowCyan)"/>
+    <circle cx="890" cy="210" r="4" fill="#e0f2fe"/>
 
-  <g transform="translate(72 238)" font-family="monospace" font-size="13">
-    <text fill="#22d3ee">01</text><text x="28" fill="#cbd5e1">build the thing</text>
-    <text x="190" fill="#475569">→</text>
-    <text x="220" fill="#a78bfa">02</text><text x="248" fill="#cbd5e1">break the abstraction</text>
-    <text x="478" fill="#475569">→</text>
-    <text x="508" fill="#22d3ee">03</text><text x="536" fill="#cbd5e1">understand why</text>
+    <g class="orbit">
+      <circle cx="890" cy="106" r="4" fill="#22d3ee" filter="url(#glowCyan)"/>
+      <circle cx="890" cy="314" r="3" fill="#a78bfa"/>
+    </g>
+    <g class="orbit2">
+      <circle cx="962" cy="210" r="4" fill="#a78bfa" filter="url(#glowCyan)"/>
+      <circle cx="818" cy="210" r="3" fill="#22d3ee"/>
+    </g>
+
+    <g filter="url(#glowCyan)">
+      <circle class="pulse" cx="890" cy="106" r="3" fill="#22d3ee"/>
+      <circle class="pulse pulse2" cx="962" cy="210" r="3" fill="#a78bfa"/>
+      <circle class="pulse pulse3" cx="818" cy="210" r="3" fill="#22d3ee"/>
+    </g>
+
+    <g stroke="#475569" stroke-width="1" stroke-dasharray="3 7" opacity="0.6">
+      <path d="M890 210L1018 146"/>
+      <path d="M890 210L1040 286"/>
+      <path d="M890 210L760 145"/>
+    </g>
+
+    <g class="scanner" opacity="0.6">
+      <path d="M776 210H1004" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.55"/>
+    </g>
+
+    <g font-family="monospace" font-size="10">
+      <text x="1008" y="143" fill="#64748b">EVENTS</text>
+      <text x="1032" y="300" fill="#64748b">DATA</text>
+      <text x="744" y="141" fill="#64748b">AI</text>
+      <text x="875" y="250" fill="#94a3b8">SYSTEM</text>
+    </g>
   </g>
 
-  <text x="72" y="326" fill="#475569" font-family="monospace" font-size="12">STATUS: BUILDING</text>
-  <text x="1128" y="326" text-anchor="end" fill="#475569" font-family="monospace" font-size="12">INDIA · 2026</text>
+  <g font-family="monospace" font-size="10" fill="#475569">
+    <text x="70" y="374">INDIA · 2026</text>
+    <text x="1130" y="374" text-anchor="end">STATUS: BUILDING</text>
+  </g>
 </svg>
