@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./field-guide.svg" alt="Vikram field guide" width="100%" />
+<img src="./field-guide.svg?v=20260906-1" alt="Vikram field guide" width="100%" />
 </div>
 
 ## `SPECIMENS`
