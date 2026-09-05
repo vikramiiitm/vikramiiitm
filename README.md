@@ -12,13 +12,11 @@
 
 ## `whoami`
 
-I’m a software engineer who likes going **one layer deeper**.
+**Software Engineer · Backend & Distributed Systems**
 
-I build things across backend systems, web applications, AI tooling and experiments — but the interesting part is usually what happens after the first version works.
+I build production systems where APIs, data, events and infrastructure have to work together — and I keep a parallel habit of building things just because the idea is interesting.
 
-**Why did it work?**  
-**Where does it break?**  
-**What happens if the abstraction disappears?**
+My work spans **backend architecture, cloud systems, web applications, AI tooling and product experiments**.
 
 </td>
 <td width="42%" valign="top">
@@ -26,18 +24,128 @@ I build things across backend systems, web applications, AI tooling and experime
 ### `signal`
 
 ```text
-backend      ████████████████
-AI / agents  ██████████████░░
-web          █████████████░░░
-systems      ████████████░░░░
-experiments ███████████████░
+backend / distributed   ████████████████
+AI / agents             ██████████████░░
+web / product           █████████████░░░
+cloud / infrastructure  █████████████░░░
+experiments             ███████████████░
 ```
 
-<sub>Not a skill ranking. Just where my curiosity keeps going.</sub>
+<sub>Not a skill ranking. Just where I spend my time.</sub>
 
 </td>
 </tr>
 </table>
+
+<br>
+
+## `what i actually build`
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### `EONOM`
+
+A personal product built as a **separate web + application architecture**.
+
+The UI is a Next.js / React application; the application layer is a NestJS service with Prisma/PostgreSQL, authentication, listings, bookings, wishlists, reviews, messaging, promotions, recommendations, payments, notifications and event-driven modules.
+
+**The interesting part:** treating a product as a system, not just a screen.
+
+</td>
+<td width="50%" valign="top">
+
+### `BLESSHMS`
+
+A full hospital-management system split across **frontend + backend repositories**.
+
+The frontend is a Next.js / React application covering patients, appointments, prescriptions, billing, inventory, labs, optics, analytics and administration. The backend provides NestJS APIs, PostgreSQL persistence, JWT/RBAC, audit trails, backups, licensing and offline/cloud synchronization.
+
+**The interesting part:** real workflows meeting real infrastructure.
+
+</td>
+</tr>
+</table>
+
+```text
+                    PRODUCT
+                       │
+          ┌────────────┴────────────┐
+          │                         │
+        EONOM                  BLESSHMS
+          │                         │
+     ┌────┴────┐              ┌─────┴─────┐
+     │         │              │           │
+     UI       API            UI          API
+     │         │              │           │
+   Next.js   NestJS         Next.js     NestJS
+                │                         │
+             Prisma /                  TypeORM /
+             PostgreSQL                PostgreSQL
+```
+
+<sub>These are the kinds of systems I enjoy: multiple moving parts, clear boundaries, and enough complexity to make the architecture matter.</sub>
+
+<br>
+
+## `the engineering side`
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+**BACKEND**
+
+Python · Django · DRF  
+Node.js · NestJS  
+REST · GraphQL
+
+</td>
+<td width="33%" align="center">
+
+**SYSTEMS**
+
+AWS · GCP · Terraform  
+SQS · Lambda · BigQuery  
+Event-driven architecture
+
+</td>
+<td width="33%" align="center">
+
+**DATA**
+
+PostgreSQL · MongoDB  
+Prisma · TypeORM · DBT  
+ETL · APIs · SFTP
+
+</td>
+</tr>
+</table>
+
+<br>
+
+## `production taught me`
+
+```text
+millions of records
+        │
+        ▼
+   event pipelines ────────→ APIs ────────→ external systems
+        │                     │                    │
+        ▼                     ▼                    ▼
+     queues                auth / RBAC          webhooks
+        │                     │                    │
+        └──────────────→ observability ←──────────┘
+                              │
+                              ▼
+                         failure happens
+                              │
+                              ▼
+                         design for it
+```
+
+I've worked on high-throughput event pipelines, third-party integrations, cloud infrastructure, data/ETL systems and backend platforms across production environments. My resume describes 4+ years of experience across fintech, logistics and royalty-accounting domains, including ownership of production systems end-to-end. fileciteturn42file0L5-L8
 
 <br>
 
@@ -58,7 +166,7 @@ Start with *why*.
 ### 02
 **BUILD**
 
-Turn the idea into something real.
+Make the idea real.
 
 </td>
 <td align="center" width="33%">
@@ -98,38 +206,13 @@ Understand what is actually happening.
                                  └──────────→ build again
 ```
 
-## `where my curiosity is`
-
-`AI agents` · `LLM systems` · `developer tooling`  
-`backend architecture` · `automation` · `web interfaces`  
-`data + APIs` · `systems thinking` · `things that shouldn't work, but might`
-
 <br>
 
-<table>
-<tr>
-<td width="50%" valign="top">
+## `currently`
 
-### `the engineering side`
-
-Python / Django / DRF  
-React / Node.js  
-PostgreSQL / MongoDB  
-GraphQL / Docker / Git
-
-</td>
-<td width="50%" valign="top">
-
-### `the rabbit holes`
-
-Agents that use tools  
-Models that build software  
-Interfaces that generate themselves  
-Systems that remember context
-
-</td>
-</tr>
-</table>
+**AI agents** · **LLM systems** · **developer tooling**  
+**backend architecture** · **automation** · **web interfaces**  
+**data + APIs** · **distributed systems** · **product experiments**
 
 <br>
 
