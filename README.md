@@ -61,7 +61,7 @@ Listings, bookings, wishlists, reviews, messaging, promotions, recommendations, 
 
 A **hospital management system** split into separate frontend and backend applications.
 
-<a href="https://blesshms.com"><img src="https://raw.githubusercontent.com/vikramiiitm/hms_gem/main/public/logo.png" alt="BlessHMS" height="48" /></a>
+<a href="https://blesshms.com"><img src="https://www.blesshms.com/logo_animated.svg?t=1788651002872" alt="BlessHMS" height="48" /></a>
 
 **Frontend:** Next.js / React  
 **Backend:** NestJS / PostgreSQL
