@@ -2,68 +2,65 @@
 
 # VIKRAM
 
-### I like building things that turn an idea into something you can actually use.
+### I build software, break abstractions, and keep asking *why?*
 
-`software` · `systems` · `AI` · `web` · `experiments`
+`engineering` · `AI` · `systems` · `web` · `experiments`
 
 </div>
 
 ---
 
-## `./projects`
+```text
+╭──────────────────────────────────────────────────────────────╮
+│                                                              │
+│   I like turning ideas into things that actually work.       │
+│                                                              │
+│   Not particularly interested in collecting technologies.    │
+│   More interested in understanding them.                     │
+│                                                              │
+╰──────────────────────────────────────────────────────────────╯
+```
 
-A few things I've built, explored, or spent time breaking and rebuilding:
+## `currently`
 
-| Project | What it is |
-|---|---|
-| **[Movie Web](https://github.com/vikramiiitm/movie-web)** | A web app for discovering and watching movies and TV content. |
-| **[React LMS](https://github.com/vikramiiitm/react-lms)** | A React-based LMS frontend experiment connected to a Django/Open edX backend. |
-| **[Django React Lead Manager](https://github.com/vikramiiitm/django_react_leadmanager)** | A full-stack lead-management application using Django and React. |
-| **[Django CRM](https://github.com/vikramiiitm/Django-CRM)** | A CRM application built with Django. |
-| **[Image Recognition](https://github.com/vikramiiitm/Image_recognition)** | An image-recognition and computer-vision project. |
-| **[Image Recognition UI](https://github.com/vikramiiitm/image_recog_ui)** | A web UI for an image-recognition system. |
-| **[React Chat App](https://github.com/vikramiiitm/react-chat-app)** | A chat application built with React. |
-| **[MERN E-commerce](https://github.com/vikramiiitm/ecommerce-store-mern)** | An online store built with the MERN stack. |
-| **[Stock Project](https://github.com/vikramiiitm/stockproject)** | A stock-market related web application. |
-| **[Globe UI](https://github.com/vikramiiitm/Globe-UI-Rotating)** | An interactive rotating globe interface. |
-| **[Memory Game](https://github.com/vikramiiitm/memory-game)** | A browser-based memory game. |
-| **[Parkzap](https://github.com/vikramiiitm/parkzapcopy)** | A parking-focused web application. |
-| **[Carrier Data Tool](https://github.com/vikramiiitm/carrier_data_tool)** | A tool for working with carrier data. |
-| **[Competitive Programming](https://github.com/vikramiiitm/CP)** | Algorithms and data-structure problem solving. |
+Building across **backend systems, AI tooling, developer tools, and web applications**.
 
----
+Lately, a lot of my curiosity is around **AI agents, model orchestration, coding workflows, and the boundary between humans and software that can build software.**
 
-## `./toolbox`
+## `stack`
 
-**Python** · **Django** · **Django REST Framework** · **React** · **Node.js** · **MongoDB** · **PostgreSQL** · **GraphQL** · **Docker** · **Git**
+**Python** · **Django** · **DRF** · **React** · **Node.js**  
+**PostgreSQL** · **MongoDB** · **GraphQL** · **Docker** · **Git**
 
-**AI models** · **AI agents** · **automation** · **developer tooling** · **system design**
+And increasingly:
 
----
+**LLMs** · **AI agents** · **automation** · **developer tooling** · **system design**
 
-## `./way_of_working`
+## `how_i_build`
 
 ```text
 idea
-  ↓
-question everything
-  ↓
-build
-  ↓
-break
-  ↓
-understand
-  ↓
-make it better
+  │
+  ├── question it
+  │
+  ├── build it
+  │
+  ├── break it
+  │
+  ├── understand why
+  │
+  └── build it better
 ```
 
-I enjoy the intersection of **software engineering and AI** — especially figuring out how models, tools, codebases, tests and humans can work together without turning engineering into blind code generation.
+I don't want software that merely *looks* finished.
 
-> **Build first. Understand why. Then make it good.**
+I like knowing **what is happening underneath, where it breaks, and why the design should exist in the first place.**
 
 ---
 
 <div align="center">
+
+> **Build. Break. Understand. Repeat.**
 
 `still building.`
 
