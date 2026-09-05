@@ -1,97 +1,150 @@
 <div align="center">
 
-# VIKRAM
-
-### I build systems, tools, and experiments at the edge of software + AI.
-
-<br>
-
-`BACKEND` &nbsp;·&nbsp; `AI` &nbsp;·&nbsp; `SYSTEMS` &nbsp;·&nbsp; `WEB` &nbsp;·&nbsp; `EXPERIMENTS`
+<img src="./hero.svg" alt="Vikram profile hero" width="100%" />
 
 </div>
 
 <br>
 
-```text
-┌──────────────────────────────────────────────────────────────────────┐
-│                                                                      │
-│   curiosity  →  prototype  →  reality  →  failure  →  understanding │
-│                                                                      │
-└──────────────────────────────────────────────────────────────────────┘
-```
-
-## ABOUT
-
-I’m a software engineer who enjoys going deeper than the framework layer.
-
-I like taking an idea from **“this should exist”** to something real — then pulling it apart to understand what is actually happening underneath.
-
-My public work moves between **backend engineering, developer tooling, AI systems, interfaces, and small experiments that turn into much bigger rabbit holes.**
-
-## WHAT I’M INTO
-
 <table>
 <tr>
-<td width="50%">
+<td width="58%" valign="top">
 
-**AI × SOFTWARE**
+## `whoami`
 
-Agents · LLM workflows · model orchestration · generative interfaces · automation
+I’m a software engineer who likes going **one layer deeper**.
 
-</td>
-<td width="50%">
+I build things across backend systems, web applications, AI tooling and experiments — but the interesting part is usually what happens after the first version works.
 
-**SYSTEMS × ENGINEERING**
-
-APIs · data · architecture · developer tools · performance · distributed thinking
-
-</td>
-</tr>
-<tr>
-<td>
-
-**BUILDING × WEB**
-
-Django · React · Node · PostgreSQL · MongoDB · GraphQL
+**Why did it work?**  
+**Where does it break?**  
+**What happens if the abstraction disappears?**
 
 </td>
-<td>
+<td width="42%" valign="top">
 
-**CURIOSITY × CODE**
+### `signal`
 
-Things that are useful, weird, visual, ambitious — or simply worth understanding.
+```text
+backend      ████████████████
+AI / agents  ██████████████░░
+web          █████████████░░░
+systems      ████████████░░░░
+experiments ███████████████░
+```
+
+<sub>Not a skill ranking. Just where my curiosity keeps going.</sub>
 
 </td>
 </tr>
 </table>
 
-## CURRENTLY
+<br>
+
+## `the pattern`
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+### 01
+**QUESTION**
+
+Start with *why*.
+
+</td>
+<td align="center" width="33%">
+
+### 02
+**BUILD**
+
+Turn the idea into something real.
+
+</td>
+<td align="center" width="33%">
+
+### 03
+**PULL IT APART**
+
+Understand what is actually happening.
+
+</td>
+</tr>
+</table>
 
 ```text
-┌─ exploring ─────────────────────────────────────────────────────────┐
-│                                                                     │
-│  AI agents            how models + tools become useful systems      │
-│  coding workflows     making software development more composable   │
-│  developer tooling    reducing the friction between idea and code   │
-│  intelligent UI       interfaces that adapt to what you're doing    │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
+                         ┌───────────────┐
+                         │     IDEA      │
+                         └───────┬───────┘
+                                 │
+                                 ▼
+                    ┌────────────────────────┐
+                    │        PROTOTYPE       │
+                    └────────────┬───────────┘
+                                 │
+                       ┌─────────┴─────────┐
+                       │                   │
+                       ▼                   ▼
+                 ┌───────────┐       ┌───────────┐
+                 │   WORKS   │       │   BREAKS  │
+                 └─────┬─────┘       └─────┬─────┘
+                       │                   │
+                       └─────────┬─────────┘
+                                 ▼
+                         ┌───────────────┐
+                         │ UNDERSTANDING │
+                         └───────┬───────┘
+                                 │
+                                 └──────────→ build again
 ```
 
-## MY RULE
+## `where my curiosity is`
 
-> **Don't just make it work. Figure out why it works.**
+`AI agents` · `LLM systems` · `developer tooling`  
+`backend architecture` · `automation` · `web interfaces`  
+`data + APIs` · `systems thinking` · `things that shouldn't work, but might`
 
-That usually leads to better code, stranger experiments, and occasionally a completely different idea than the one I started with.
+<br>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### `the engineering side`
+
+Python / Django / DRF  
+React / Node.js  
+PostgreSQL / MongoDB  
+GraphQL / Docker / Git
+
+</td>
+<td width="50%" valign="top">
+
+### `the rabbit holes`
+
+Agents that use tools  
+Models that build software  
+Interfaces that generate themselves  
+Systems that remember context
+
+</td>
+</tr>
+</table>
+
+<br>
+
+> ### **I don't want software that merely looks finished.**
+> 
+> I want to understand the machinery underneath it.
 
 <br>
 
 <div align="center">
 
-**build → break → understand → repeat**
+`BUILD` &nbsp;→&nbsp; `BREAK` &nbsp;→&nbsp; `UNDERSTAND` &nbsp;→&nbsp; `REPEAT`
 
 <br><br>
 
-`still building.`
+<sub>still building.</sub>
 
 </div>
