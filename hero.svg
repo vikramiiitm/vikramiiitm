@@ -14,9 +14,10 @@
       <feGaussianBlur stdDeviation="22"/>
     </filter>
     <style>
-      .display{font-family:Baskerville,'Iowan Old Style','Palatino Linotype','Book Antiqua',Georgia,serif}
-      .sans{font-family:Inter,Arial,Helvetica,sans-serif}
-      .mono{font-family:'SFMono-Regular','Courier New',monospace}
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;display=swap');
+      .display{font-family:'Fraunces',Georgia,serif;font-weight:600}
+      .sans{font-family:'DM Sans',Arial,Helvetica,sans-serif}
+      .mono{font-family:'DM Sans',Arial,Helvetica,sans-serif}
       .sway{transform-box:fill-box;transform-origin:bottom center;animation:sway 8s ease-in-out infinite}
       .sway2{animation-delay:-2.4s}
       .sway3{animation-delay:-4.8s}
@@ -28,46 +29,39 @@
   <rect width="1200" height="620" fill="url(#paper)"/>
   <circle cx="1000" cy="125" r="250" fill="url(#sun)" filter="url(#blur)"/>
 
-  <!-- quiet paper marks -->
   <g stroke="#73756D" fill="none" opacity=".23" stroke-width="1">
     <path d="M72 74h74M72 74v74"/>
     <path d="M1128 546h-74M1128 546v-74"/>
   </g>
   <circle cx="72" cy="74" r="2.5" fill="#B66A4A" opacity=".7"/>
 
-  <!-- TYPOGRAPHY -->
-  <text x="88" y="116" class="mono" font-size="12" letter-spacing="3.5" fill="#70736A">01 / IDENTITY</text>
+  <text x="88" y="116" class="mono" font-size="12" font-weight="600" letter-spacing="3.5" fill="#70736A">01 / IDENTITY</text>
 
-  <text x="86" y="284" class="display" font-size="112" letter-spacing="-4" fill="#20241E">Vikram</text>
+  <text x="86" y="284" class="display" font-size="112" letter-spacing="-3" fill="#20241E">Vikram</text>
   <path d="M91 309 C205 315 351 308 486 312" fill="none" stroke="#B66A4A" stroke-width="2.5"/>
 
-  <text x="92" y="359" class="sans" font-size="22" font-weight="600" letter-spacing=".4" fill="#20241E">Software Engineer</text>
+  <text x="92" y="359" class="sans" font-size="22" font-weight="600" letter-spacing=".2" fill="#20241E">Software Engineer</text>
   <text x="92" y="389" class="sans" font-size="17" fill="#62665D">backend &amp; distributed systems</text>
 
-  <text x="92" y="455" class="display" font-size="29" fill="#294936">I build systems that have to work.</text>
+  <text x="92" y="455" class="display" font-size="29" font-weight="500" fill="#294936">I build systems that have to work.</text>
   <text x="94" y="487" class="sans" font-size="15" fill="#70736A">4+ years across production systems, data, integrations and infrastructure.</text>
 
-  <text x="92" y="538" class="mono" font-size="10.5" letter-spacing="1.5" fill="#777A71">BANGALORE · IIITM GWALIOR · 2021 → NOW</text>
+  <text x="92" y="538" class="mono" font-size="10.5" font-weight="600" letter-spacing="1.5" fill="#777A71">BANGALORE · IIITM GWALIOR · 2021 → NOW</text>
 
-  <!-- A LIVING TREE. The trunk and branches intentionally continue below the hero. -->
   <g class="sway">
-    <!-- trunk -->
     <path d="M1018 620 C1012 574 1017 530 1003 488 C988 443 966 407 970 362 C974 317 1001 282 1005 240 C1009 197 998 158 976 125" fill="none" stroke="#3C4C39" stroke-width="14" stroke-linecap="round"/>
     <path d="M1017 620 C1016 567 1021 526 1008 486 C994 443 976 408 979 365" fill="none" stroke="#65715C" stroke-width="5" stroke-linecap="round" opacity=".8"/>
 
-    <!-- main branches -->
     <path d="M1002 488 C955 458 916 441 879 405 C850 376 829 344 817 307" fill="none" stroke="#3C4C39" stroke-width="8" stroke-linecap="round"/>
     <path d="M974 410 C1018 382 1054 355 1070 315 C1083 282 1081 247 1071 218" fill="none" stroke="#3C4C39" stroke-width="8" stroke-linecap="round"/>
     <path d="M981 364 C944 339 918 315 902 282 C889 254 888 226 894 201" fill="none" stroke="#3C4C39" stroke-width="6" stroke-linecap="round"/>
     <path d="M1001 287 C1031 259 1050 229 1054 193 C1057 167 1051 143 1042 121" fill="none" stroke="#3C4C39" stroke-width="6" stroke-linecap="round"/>
 
-    <!-- smaller branches -->
     <path d="M879 405 C850 401 827 390 807 373" fill="none" stroke="#4B5A46" stroke-width="4" stroke-linecap="round"/>
     <path d="M817 307 C794 291 778 269 773 244" fill="none" stroke="#4B5A46" stroke-width="4" stroke-linecap="round"/>
     <path d="M1070 315 C1093 301 1107 283 1112 259" fill="none" stroke="#4B5A46" stroke-width="4" stroke-linecap="round"/>
     <path d="M902 282 C877 270 860 253 853 232" fill="none" stroke="#4B5A46" stroke-width="3.5" stroke-linecap="round"/>
 
-    <!-- leaves, deliberately varied in size and direction -->
     <g class="sway2">
       <path d="M805 374 C771 362 750 337 758 316 C785 310 810 332 805 374Z" fill="#59765D"/>
       <path d="M800 367 C783 349 771 333 762 319" fill="none" stroke="#31503A" stroke-width="1.5" opacity=".75"/>
@@ -89,7 +83,6 @@
       <path d="M891 195 C880 177 870 162 863 154" fill="none" stroke="#38533E" stroke-width="1.5" opacity=".7"/>
     </g>
 
-    <!-- a few new leaves at the crown -->
     <g class="sway2">
       <path d="M1041 123 C1048 93 1068 74 1087 80 C1090 103 1072 121 1041 123Z" fill="#55765A"/>
       <path d="M1048 117 C1062 101 1073 90 1084 83" fill="none" stroke="#31503A" stroke-width="1.4" opacity=".7"/>
@@ -99,17 +92,14 @@
       <path d="M974 119 C964 101 956 86 952 76" fill="none" stroke="#3B5740" stroke-width="1.4" opacity=".7"/>
     </g>
 
-    <!-- tiny fruit / seed, connecting nature with the technical signal color -->
     <circle cx="1111" cy="258" r="5" fill="#B66A4A"/>
   </g>
 
-  <!-- roots: these are intentionally visible and will become the transition into section 2 -->
   <g fill="none" stroke-linecap="round">
     <path d="M1018 598 C984 581 956 578 926 589 C900 598 878 610 850 620" stroke="#3C4C39" stroke-width="5"/>
     <path d="M1020 603 C1048 585 1072 578 1098 582 C1122 586 1143 599 1160 620" stroke="#3C4C39" stroke-width="5"/>
     <path d="M1009 604 C991 597 977 600 961 611" stroke="#6B795F" stroke-width="3"/>
   </g>
 
-  <!-- small human annotation, deliberately quiet -->
-  <text x="1111" y="560" class="mono" font-size="9.5" letter-spacing="1.2" fill="#73766D" transform="rotate(-90 1111 560)">GROW · BUILD · LEARN</text>
+  <text x="1111" y="560" class="mono" font-size="9.5" font-weight="600" letter-spacing="1.2" fill="#73766D" transform="rotate(-90 1111 560)">GROW · BUILD · LEARN</text>
 </svg>
